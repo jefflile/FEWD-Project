@@ -5,14 +5,22 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Jeff Lile's Horse Racing Project</title>
             <link rel="stylesheet" href="style.css">
-            <link rel="javascript" href="javascript.js"
+            <link rel="javascript" href="javascript.js">
         </head>
         <body>
-            <h1>Code Louisville Horse Wagering</h1>
+            <div class="wrapper">
+                <header class="main-header">
+                    <h1 class="title"><a href="#">Code Louisville Horse Wagering</a></h1>
+                    <ul class="main-nav">
+                        <li><a href="#Make-Your-Wager">Make Your Wager</a></li>
+                        <li><a href="#Current-Horse-Odds">Current Horse Odds</a></li>
+                        <li><a href="#About-the-Horses">About the Horses</a></li>
+                    </ul>
+                </header>
             <div class="tenor-gif-embed" data-postid="8154827" data-share-method="host" data-width="50%" data-height="300px" data-aspect-ratio="1.2947368421052632"><a href="https://tenor.com/view/horse-racing-cheval-jimmy-gif-8154827">Horse Racing GIF</a> from <a href="https://tenor.com/search/horse-gifs">Horse GIFs</a></div>
             <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
             <form action="index.html" method="post">
-                <h1>Make Your Wager</h1>
+                <h1><a id="Make-Your-Wager">Make Your Wager</a></h1>
 
                 <label for="number">Enter your horse number:</label><br>
                 <input type="text" id="number" name="horse_number"><br>
@@ -23,7 +31,11 @@
                 <button type="submit">Bet</button>
 
             </form>
-            <h2>About the Horses</h2>
+            <h2><a id="Current-Horse-Odds">Current Horse Odds</a></h2>
+                <p>Lucky: 12-1</p>
+                <p>Bugle: 10-1</p>
+                <p>Stud: 4-1</p>
+            <h2><a id="About-the-Horses">About the Horses</a></h2>
             <h3>Lucky</h3>
                 <p>Lucky is a fun horse, but he has a funny gait.</p>
             <h3>Bugle</h3>
