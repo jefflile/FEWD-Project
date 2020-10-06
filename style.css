@@ -2,8 +2,17 @@
 Base Element Styles
 =================================== */
 
-body {
-    line-height: 1.6;
-    width: 70%;
+.main-header {
+    background: green;
+    padding: 1em 0;
+}
+
+.main-content {
+    width: 80%;
     margin: 0 auto;
+}
+
+.main-footer {
+    text-align: center;
+    background: green;
 }
