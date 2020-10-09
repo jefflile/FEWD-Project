@@ -1,18 +1,85 @@
-/* =========================
-Base Element Styles
-=================================== */
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Verdana, sans-serif;
+	line-height: 1.6;
+	color: #000;
+	margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+a {
+	text-decoration: none;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
 
 .main-header {
     background: green;
-    padding: 1em 0;
+	padding-top: .5em;
+    padding-bottom: .5em;
+    width: 100%
+}
+
+.title {
+	font-size: 1.35em;
+    margin: 0;
+    color: #fff
+}
+.main-nav {
+	margin-top: 5px;
+}
+.title a,
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+.main-nav a {
+	font-size: .95em;
+	color: #fff;
+	text-transform: uppercase;
+}
+.main-nav a:hover {
+	text-decoration: underline;
 }
 
 .main-content {
     width: 80%;
     margin: 0 auto;
+    padding-top: 10px;
 }
 
 .main-footer {
     text-align: center;
     background: green;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	.main-header,
+	.row {
+        width: 100%;
+		margin: 0 auto;
+		/*max-width: 1150px;*/
+	}
 }
