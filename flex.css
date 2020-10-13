@@ -5,13 +5,22 @@
 @media (min-width: 769px) {
 
 	.main-header,
-	.main-nav {
+	.main-nav,
+	.row {
 		display: flex;
 	}
 	.main-header {
 		flex-direction: column;
 		align-items: center;
 	}
+
+	.col {
+		flex: 1;
+	}
+
+	.row1 {
+        text-align: center;
+    }
 
 }
 
@@ -21,5 +30,9 @@
 		flex-direction: row;
 		justify-content: space-between;
 	}
+
+	.row1 {
+        text-align: center;
+    }
 
 }

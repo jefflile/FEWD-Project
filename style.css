@@ -13,6 +13,11 @@ body {
 	margin: 0;
 }
 
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -23,12 +28,14 @@ a {
 	text-decoration: none;
 }
 
+h2 {
+    text-align: center;
+}
+
 
 /* ================================= 
   Base Layout Styles
 ==================================== */
-
-/* ---- Navigation ---- */
 
 .main-header {
     background: green;
@@ -40,7 +47,6 @@ a {
 .title {
 	font-size: 1.35em;
     margin: 0;
-    color: #fff
 }
 .main-nav {
 	margin-top: 5px;
@@ -49,7 +55,8 @@ a {
 .main-nav a {
 	text-align: center;
 	display: block;
-	padding: 10px 15px;
+    padding: 10px 15px;
+    color: #fff;
 }
 .main-nav a {
 	font-size: .95em;
@@ -64,11 +71,15 @@ a {
     width: 80%;
     margin: 0 auto;
     padding-top: 10px;
+    
 }
 
 .main-footer {
     text-align: center;
     background: green;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    width: 100%
 }
 
 /* ================================= 
@@ -76,10 +87,17 @@ a {
 ==================================== */
 
 @media (min-width: 769px) {
-	.main-header,
-	.row {
+    .main-header,
+    .row {
         width: 100%;
 		margin: 0 auto;
-		/*max-width: 1150px;*/
-	}
+    }
+    
+    .row {
+        max-width: 1150px;
+    }
+
+    .row1 {
+        text-align: center;
+    }
 }
