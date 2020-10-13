@@ -80,6 +80,8 @@ h2 {
     padding-top: .5em;
     padding-bottom: .5em;
     width: 100%
+    position: absolute;
+    bottom: 0;
 }
 
 /* ================================= 
