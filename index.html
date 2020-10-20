@@ -6,7 +6,7 @@
             <title>Jeff Lile's Horse Racing Project</title>
             <link rel="stylesheet" href="style.css">
             <link rel="stylesheet" href="flex.css">
-            <link rel="javascript" href="script.js">
+            <script src="script.js"></script>
         </head>
         <body>
             <header class="main-header">
@@ -23,15 +23,14 @@
             <div class="main-content">
                 <div class = "row row1">
                     <div class = "col column1">
-                        <form action="index.html" method="post">
+                        <form id="horseForm" action="index.html" method="post"></form>
                             <h2><a id="Make-Your-Wager">Make Your Wager</a></h2>
                             <label for="number">Enter your horse number:</label><br>
-                            <input type="text" id="number" name="horse_number"><br>
-                            <label for="amount">How much do you want to wager?</label><br>
-                            <input type="text" id="amount" name="wager_amount"><br>
-                            <button type="reset">Clear Bet</button>
-                            <button type="submit">Bet</button>
+                            <input type="text" id="horse-numb" name="horse-number"><br>
+                            <input type="button" onclick="betFunction()" value="Bet">
+                            <input type="button" onclick="resetFunction()" value="Reset">
                         </form>
+                <p id="horse-bet"></p>
                     </div>
                     <div class = "col column2">
                         <h2><a id="Current-Horse-Odds">Current Horse Odds</a></h2>
@@ -40,28 +39,6 @@
                             <p>#3 Stud: 4-1</p>
                     </div>
                 </div>
-
-                <form action="index.html" method="post"></form>
-                <h2><a id="Make-Your-Wager">Make Your Wager</a></h2>
-                <label for="number">Enter your horse number:</label><br>
-                <input type="number" id="horse-numb" name="horse-number"><br>
-                <button type="button" onclick="betFunction()">Bet</button>
-                <button type="reset">Clear Bet</button>
-                </form>
-                <p id="horse-bet"></p>
-
-                <script>
-                    function betFunction() {
-                    var x, text;
-                    x = document.getElementById("horse-numb").value;
-                    if (isNaN(x) || x < 1 || x > 3) {
-                        text = "Please choose a horse number (#) in the race.";
-                    } else {
-                        text = "Your bet has been submitted.";
-                    }
-                    document.getElementById("horse-bet").innerHTML = text;
-                    }
-                </script>
                 <div class = "col column3">
                     <h2><a id="About-the-Horses">About the Horses</a></h2>
                     <h3>Lucky</h3>
