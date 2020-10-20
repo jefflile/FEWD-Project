@@ -1,6 +1,6 @@
 function betFunction() {
     var x, text;
-    x = document.getElementById("horse-numb").value;
+    x = document.getElementById("horse-choice").value;
     if (isNaN(x) || x < 1 || x > 3) {
     text = "Please choose a horse number (#) in the race.";
     } else {
@@ -9,22 +9,34 @@ function betFunction() {
 }
 
 function resetFunction() {
-    document.getElementById("horse-numb").reset();
+    document.getElementById("horse-choice").reset();
 }
 
 var horseArray = [
-    "Stud",
-    "Stud",
-    "Stud",
-    "Stud",
-    "Stud",
-    "Bugle",
-    "Bugle",
-    "Bugle",
-    "Lucky",
-    "Lucky"
+    "3",
+    "3",
+    "3",
+    "3",
+    "3",
+    "2",
+    "2",
+    "2",
+    "1",
+    "1"
     ];
     
-var winningHorse = horseArray[Math.floor(Math.random()*horseArray.length)];
+var winningHorseNumber = horseArray[Math.floor(Math.random()*horseArray.length)];
 
-console.log(winningHorse)
+console.log(winningHorseNumber)
+
+
+
+// function correctHorse() {
+//     if (document.getElementById("horse-choice").value === winningHorseNumber) {
+//         console.log('Matched');
+//     } else {
+//         console.log('Not matched');
+//     }
+// }
+
+// console.log(correctHorse)
