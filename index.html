@@ -6,7 +6,7 @@
             <title>Jeff Lile's Horse Racing Project</title>
             <link rel="stylesheet" href="style.css">
             <link rel="stylesheet" href="flex.css">
-            <script src="script.js"></script>
+            <script defer src="script.js"></script>
         </head>
         <body>
             <header class="main-header">
@@ -26,8 +26,8 @@
                     <div class = "col column1">
                         <form id="horseForm" action="index.html" method="post">
                             <h2><a id="Make-Your-Wager">Make Your Wager</a></h2>
-                            <label for="number">Enter your horse number:</label><br>
-                            <input type="text" id="horse-choice" name="horse-number"><br>
+                            <label for="horse-choice">Enter your horse number:</label><br>
+                            <input type="number" id="horse-choice" name="horse-number"><br>
                             <input type="button" onclick="betFunction()" value="Bet">
                             <input type="reset">
                         </form>

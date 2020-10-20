@@ -8,7 +8,7 @@ function betFunction() {
     document.getElementById("horse-bet").innerHTML = text;
 }
 
-var horseArray = [
+let horseArray = [
     "3",
     "3",
     "3",
@@ -21,18 +21,16 @@ var horseArray = [
     "1"
     ];
     
-var winningHorseNumber = horseArray[Math.floor(Math.random()*horseArray.length)];
+let winningHorseNumber = horseArray[Math.floor(Math.random()*horseArray.length)];
 
 console.log(winningHorseNumber)
 
+function correctHorse(horseNumber) {
+    if (document.getElementById("horse-choice").value === horseNumber) {
+        console.log('Matched');
+    } else {
+        console.log('Not matched');
+    }
+}
 
-
-// function correctHorse() {
-//     if (document.getElementById("horse-choice").value === winningHorseNumber) {
-//         console.log('Matched');
-//     } else {
-//         console.log('Not matched');
-//     }
-// }
-
-// console.log(correctHorse)
+correctHorse(winningHorseNumber)
