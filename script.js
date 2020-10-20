@@ -8,10 +8,6 @@ function betFunction() {
     document.getElementById("horse-bet").innerHTML = text;
 }
 
-function resetFunction() {
-    document.getElementById("horse-choice").reset();
-}
-
 var horseArray = [
     "3",
     "3",
