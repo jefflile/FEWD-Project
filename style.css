@@ -32,11 +32,6 @@ h2 {
     text-align: center;
 }
 
-.img {
-    max-width: 100%;
-    height: auto;
-}
-
 
 /* ================================= 
   Base Layout Styles
@@ -92,6 +87,16 @@ h2 {
     color: #fff;
 }
 
+.img {
+    max-width: 100%;
+    height: auto;
+}
+
+.column2 p:nth-child(even){
+    background: gray;
+    color: white;
+}
+
 /* ================================= 
   Media Queries
 ==================================== */
@@ -112,3 +117,4 @@ h2 {
         text-align: center;
     }
 }
+
