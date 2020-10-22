@@ -30,9 +30,9 @@ betButton.addEventListener('click', () => {
     let x;
     x = document.getElementById("horse-choice").value;
     if (x === winningHorseNumber) {
-        console.log('You picked the correct horse!');
+        !alert('You picked the correct horse!'); location.reload();
     } else if (x >= 1 && x <= 3 && x !== winningHorseNumber) {
-        console.log('Sorry! You picked a loser.');
+        !alert('Sorry! You picked a loser.'); location.reload();
     } else {
         //do nothing
     }                    
