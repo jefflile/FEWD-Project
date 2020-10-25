@@ -6,17 +6,21 @@
             <title>Jeff Lile's Horse Racing Project</title>
             <link rel="stylesheet" href="style.css">
             <link rel="stylesheet" href="flex.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <script defer src="script.js"></script>
         </head>
         <body>
             <header class="main-header">
                 <h1 class="title"><a href="#">Code Louisville Horse Wagering</a></h1>
-                <ul class="main-nav">
+                <ul class="main-nav" id= "menuLinks">
                     <li><a href="#Make-Your-Wager">Make Your Wager</a></li>
                     <li><a href="#Current-Horse-Odds">Current Horse Odds</a></li>
                     <li><a href="#Previous-Results">Previous Results</a></li>
                     <li><a href="#About-the-Horses">About the Horses</a></li>
                 </ul>
+                <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </header>
             <div class = "header-image">
                 <img src="Horse-Racing.jpg" alt="horse racing" width=100%>

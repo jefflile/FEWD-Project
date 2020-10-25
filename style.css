@@ -132,6 +132,50 @@ h2 {
     content: "\25B2";
   }
 
+
+
+/* Style the navigation menu */
+.main-nav .main-header {
+    overflow: hidden;
+    background-color: green;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .main-header #menuLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .main-header a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .main-header a.icon {
+    background: green;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: black;
+    color: white;
+  }
+
+
+
+
+
+
+
 /* ================================= 
   Media Queries
 ==================================== */
