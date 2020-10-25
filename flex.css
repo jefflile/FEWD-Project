@@ -5,7 +5,7 @@
 @media (min-width: 769px) {
 
 	.desktop-menu {
-		display: visible;
+		display: block;
 	}
 
 	.mobile-menu {
@@ -47,9 +47,7 @@
 
 	.main-header {
 		flex-direction: row;
-		justify-content: space-between;
-		position: fixed;
-		top: 0;		
+		justify-content: space-between;	
 	}
 
 }
