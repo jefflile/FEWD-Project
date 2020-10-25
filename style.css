@@ -132,10 +132,12 @@ h2 {
     content: "\25B2";
   }
 
-
+.desktop {
+    display: none;
+}
 
 /* Style the navigation menu */
-.main-nav .main-header {
+.mobile-nav .main-header {
     overflow: hidden;
     background-color: green;
     position: relative;
@@ -169,31 +171,3 @@ h2 {
     background-color: black;
     color: white;
   }
-
-
-
-
-
-
-
-/* ================================= 
-  Media Queries
-==================================== */
-
-@media (min-width: 769px) {
-    .main-header,
-    .row {
-        width: 100%;
-		margin: 0 auto;
-    }
-    
-    .row {
-        max-width: 1150px;
-        flex: 1
-    }
-
-    .row1 {
-        text-align: center;
-    }
-}
-

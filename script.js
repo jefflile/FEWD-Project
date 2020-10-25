@@ -46,13 +46,12 @@ betButton.addEventListener('click', () => {
 
 
 // This controls the expander action.
-var acc = document.getElementsByClassName("expander");
-var i;
-
+const acc = document.getElementsByClassName("expander");
+let i;
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
-    var panel = this.nextElementSibling;
+    const panel = this.nextElementSibling;
     if (panel.style.display === "block") {
       panel.style.display = "none";
     } else {
@@ -61,16 +60,9 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-
-
-
-
-
-
-
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+// Show/hide menu with hamburger icon
 function menuFunction() {
-    var x = document.getElementById("menuLinks");
+    let x = document.getElementById("menuLinks");
     if (x.style.display === "block") {
       x.style.display = "none";
     } else {

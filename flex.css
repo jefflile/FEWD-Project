@@ -4,6 +4,10 @@
 
 @media (min-width: 769px) {
 
+	.desktop {
+		display: visible;
+	}
+
 	.main-header,
 	.main-nav,
 	.row {
@@ -20,8 +24,22 @@
 
 	.row1 {
         text-align: center;
-    }
-
+	}
+	
+	.main-header,
+	.row {
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	.row {
+		max-width: 1150px;
+		flex: 1
+	}
+	
+	.row1 {
+		text-align: center;
+	}
 }
 
 @media (min-width: 1025px) {
