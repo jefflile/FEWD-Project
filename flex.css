@@ -4,12 +4,16 @@
 
 @media (min-width: 769px) {
 
-	.desktop {
+	.desktop-menu {
 		display: visible;
 	}
 
+	.mobile-menu {
+		display: none;
+	}
+	
 	.main-header,
-	.main-nav,
+	.nav,
 	.row {
 		display: flex;
 	}
@@ -20,10 +24,6 @@
 
 	.col {
 		flex: 1;
-	}
-
-	.row1 {
-        text-align: center;
 	}
 	
 	.main-header,
@@ -37,21 +37,20 @@
 		flex: 1
 	}
 	
-	.row1 {
-		text-align: center;
-	}
 }
 
 @media (min-width: 1025px) {
 
+	.desktop-nav {
+		align-items: right;
+	}
+
 	.main-header {
 		flex-direction: row;
 		justify-content: space-between;
+		position: fixed;
+		top: 0;		
 	}
-
-	.row1 {
-        text-align: center;
-    }
 
 }
 

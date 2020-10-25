@@ -32,6 +32,11 @@ h2 {
     text-align: center;
 }
 
+th {
+    padding: 20px 60px;
+    width: 33%;
+}
+
 
 /* ================================= 
   Base Layout Styles
@@ -48,22 +53,22 @@ h2 {
 	font-size: 1.35em;
     margin: 0;
 }
-.main-nav {
+.nav {
 	margin-top: 5px;
 }
 .title a,
-.main-nav a {
+.nav a {
 	text-align: center;
 	display: block;
     padding: 10px 15px;
     color: #fff;
 }
-.main-nav a {
+.nav a {
 	font-size: .95em;
 	color: #fff;
 	text-transform: uppercase;
 }
-.main-nav a:hover {
+.nav a:hover {
 	text-decoration: underline;
 }
 
@@ -74,8 +79,7 @@ h2 {
 .main-content {
     width: 80%;
     margin: 0 auto;
-    padding-top: 10px;
-    
+    padding-top: 10px;    
 }
 
 .main-footer {
@@ -92,9 +96,20 @@ h2 {
     height: auto;
 }
 
+.row,
+.col {
+    text-align: center;
+}
+
 .column2 p:nth-child(even){
     background: gray;
     color: white;
+}
+
+.results-table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .expander {
@@ -132,15 +147,17 @@ h2 {
     content: "\25B2";
   }
 
-.desktop {
-    display: none;
+.desktop-menu {
+    display: hidden;
 }
 
 /* Style the navigation menu */
-.mobile-nav .main-header {
+.mobile-nav,
+.main-header {
     overflow: hidden;
     background-color: green;
     position: relative;
+    text-align: center;
   }
   
   /* Hide the links inside the navigation menu (except for logo/home) */
