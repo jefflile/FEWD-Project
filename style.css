@@ -72,7 +72,14 @@ th {
 	text-transform: uppercase;
 }
 .nav a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
+}
+
+.nav-anchor{
+  display: block;
+  height: 63px;
+  margin-top: -63px;
+  visibility: hidden;
 }
 
 .hero-image {

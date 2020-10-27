@@ -9,13 +9,15 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <script defer src="script.js"></script>
         </head>
-        <body>
+        <body id="Top">
             <header class="main-header">
                 <div class = "logo">
                     <img src="horse-running.png" alt="horse running logo" width=100px;>
+                    <!--<a href="/">-->
                 </div>
                 <div class = "desktop-menu">
                     <ul class="nav desktop-nav">
+                        <li><a href="#Top">Home</a></li>
                         <li><a href="#Make-Your-Wager">Make Your Wager</a></li>
                         <li><a href="#Current-Horse-Odds">Current Horse Odds</a></li>
                         <li><a href="#Previous-Results">Previous Results</a></li>
@@ -24,10 +26,10 @@
                 </div>
                 <div class = "mobile-menu">
                     <ul class="nav mobile-nav" id= "menuLinks">
-                        <li id="mobileNavLink" onclick="closeMenuFunction()"><a href="#Make-Your-Wager">Make Your Wager</a></li>
-                        <li id="mobileNavLink" onclick="closeMenuFunction()"><a href="#Current-Horse-Odds">Current Horse Odds</a></li>
-                        <li id="mobileNavLink" onclick="closeMenuFunction()"><a href="#Previous-Results">Previous Results</a></li>
-                        <li id="mobileNavLink" onclick="closeMenuFunction()"><a href="#About-the-Horses">About the Horses</a></li>
+                        <li onclick="closeMenuFunction()"><a class="anchor" href="#Make-Your-Wager">Make Your Wager</a></li>
+                        <li onclick="closeMenuFunction()"><a class="anchor" href="#Current-Horse-Odds">Current Horse Odds</a></li>
+                        <li onclick="closeMenuFunction()"><a class="anchor" href="#Previous-Results">Previous Results</a></li>
+                        <li onclick="closeMenuFunction()"><a class="anchor" href="#About-the-Horses">About the Horses</a></li>
                     </ul>
                     <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
                         <i class="fa fa-bars"></i>
@@ -43,8 +45,9 @@
             <div class="main-content">
                 <div class = "row row1">
                     <div class = "col column1">
+                        <span class="nav-anchor" id="Make-Your-Wager"></span>
+                        <h2>Make Your Wager</h2>
                         <form id="horseForm" action="index.html" method="post">
-                            <h2><a id="Make-Your-Wager">Make Your Wager</a></h2>
                             <label for="horse-choice">Enter your horse number:</label><br>
                             <input type="number" id="horse-choice" name="horse-number"><br>
                             <input type="button" id="betButton" value="Bet">
@@ -52,14 +55,16 @@
                         </form>
                     </div>
                     <div class = "col column2">
-                        <h2><a id="Current-Horse-Odds">Current Horse Odds</a></h2>
+                        <span class="nav-anchor" id="Current-Horse-Odds"></span>
+                        <h2>Current Horse Odds</h2>
                             <p>#1 Lucky: 12-1</p>
                             <p>#2 Bugle: 10-1</p>
                             <p>#3 Stud: 4-1</p>
                     </div>
                 </div>
                 <div class = "results">
-                    <h2><a id="Previous-Results"></a>Previous Results</h2>
+                    <span class="nav-anchor" id="Previous-Results"></span>
+                    <h2>Previous Results</h2>
                     <table class = "results-table">
                         <tr>
                             <th>Race</th>
@@ -72,7 +77,8 @@
                     </table>
                 </div>
                 <div class = "col column3">
-                    <h2><a id="About-the-Horses">About the Horses</a></h2>
+                    <span class="nav-anchor" id="About-the-Horses"></span>
+                    <h2>About the Horses</h2>
                     <h3 class = expander>Lucky</h3>
                         <div class = "expanded-content">
                             <p>Lucky is a fun horse, but he has a funny gait. When Lucky wins a race, it's usually because the other horses didn't decide to run out of the gate. Every now and then, he gets lucky.
