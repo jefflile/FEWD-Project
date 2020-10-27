@@ -81,7 +81,7 @@ th {
 
 .hero-overlay {
   position: absolute;
-  top: 25%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -104,7 +104,8 @@ th {
 .main-content {
     width: 80%;
     margin: 0 auto;
-    padding-top: 10px;    
+    padding-top: 10px;
+    position: relative;    
 }
 
 .main-footer {
@@ -170,8 +171,8 @@ th {
     margin-left: 5px;
   }
   
-  .active:after {
-    content: "\25B2";
+.active:after {
+  content: "\25B2";
   }
 
 .desktop-menu {
@@ -206,10 +207,4 @@ th {
     position: absolute;
     right: 0;
     top: 0;
-  }
-  
-  /* Style the active link (or home/logo) */
-  .active {
-    background-color: black;
-    color: white;
   }

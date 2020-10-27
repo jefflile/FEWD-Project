@@ -42,10 +42,10 @@ betButton.addEventListener('click', () => {
 
 
 // This controls the expander action.
-const acc = document.getElementsByClassName("expander");
+const exp = document.getElementsByClassName("expander");
 let i;
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+  exp[i].addEventListener("click", function() {
     this.classList.toggle("active");
     const panel = this.nextElementSibling;
     if (panel.style.display === "block") {
@@ -65,3 +65,9 @@ function menuFunction() {
       x.style.display = "block";
     }
   }
+
+// Hide mobile menu when menu item is clicked
+function closeMenuFunction () {
+  let x = document.getElementById("menuLinks");
+      x.style.display = "none";
+}
