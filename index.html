@@ -98,7 +98,21 @@
                 <span>Copyright Jeff Lile - Code Louisville - Fall 2020</span>
             </footer>
             <div class="back-to-top">
-                <a href="#Top" class="topButton" id="topButton" label="Scroll to Top"><img src= "Up-Arrow.png" alt="up arrow" width=40px></a>
+                <a href="#Top" class="topButton" id="topButton" onscroll="topButton()"><img src= "Up-Arrow.png" alt="up arrow" width=40px></a>
             </div>
+            <!--<script>
+                // When the user scrolls down 20px from the top of the document,we will show the button
+                window.onscroll = function()
+                {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+                    {
+                        document.getElementById("topButton").style.display = "inline-block";
+                    }
+                    else
+                    {
+                        document.getElementById("topButton").style.display = "none";
+                    }
+                };
+                </script>-->
         </body>
     </html>

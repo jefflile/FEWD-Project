@@ -73,4 +73,12 @@ function closeMenuFunction () {
 }
 
 
-
+// When the user scrolls down 20px from the top of the document, the button appears
+topButton.addEventListener('scroll', () => {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("topButton").style.display = "inline-block";
+  }
+  else {
+    document.getElementById("topButton").style.display = "none";
+  }
+});

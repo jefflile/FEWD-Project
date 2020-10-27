@@ -227,7 +227,6 @@ th {
     position: fixed;
     pointer-events: all;
     top: calc(100vh - 5rem);
-    display: inline-block;
     text-decoration: none;
     font-size: 2rem;
     line-height: 3rem;
@@ -236,4 +235,5 @@ th {
     height: 3rem;
     border-radius: 50%;
     padding: 0.25rem;
+    display: inline-block;
   }
