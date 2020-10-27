@@ -87,10 +87,6 @@ th {
 }
 
 .hero-overlay {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: white;
   text-align: center;
   margin: 0;
@@ -106,6 +102,10 @@ th {
     url(Horse-Racing.jpg);
   background-size: cover;
   height: 30vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-content {
