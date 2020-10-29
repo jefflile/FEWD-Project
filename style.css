@@ -226,7 +226,7 @@ th {
   .topButton {
     position: fixed;
     pointer-events: all;
-    top: calc(100vh - 5rem);
+    top: calc(100vh - 7rem);
     text-decoration: none;
     font-size: 2rem;
     line-height: 3rem;
