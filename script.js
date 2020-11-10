@@ -3,9 +3,13 @@ betButton.addEventListener('click', () => {
     let x;
     x = document.getElementById("horse-choice").value;
     if (isNaN(x) || x < 1 || x > 3) {
-        alert("Please choose a horse number (#) in the race.");
+      swal({
+        title: "Try again!",
+        text: "Please choose a horse number (#) in the race.",
+        icon: "warning",
+      });
     } else {
-        alert("Your bet has been submitted.");
+        // Do nothing.
     }                        
 });
 
@@ -30,10 +34,18 @@ betButton.addEventListener('click', () => {
     let winningHorseNumber = horseArray[Math.floor(Math.random()*horseArray.length)];
 
     if (x >= 1 && x <= 3 && x === winningHorseNumber) {
-        !alert('You picked the correct horse!'); 
+      swal({
+        title: "Good job!",
+        text: "You picked the correct horse!",
+        icon: "success",
+      });
         document.getElementById("horseForm").reset();
     } else if (x >= 1 && x <= 3 && x !== winningHorseNumber) {
-        !alert('Sorry! You picked a loser. The correct horse number was #'+winningHorseNumber); 
+      swal({
+        title: "Nope!",
+        text: "Sorry! You picked a loser. The correct horse number was #"+winningHorseNumber+".",
+        icon: "error",
+      });
         document.getElementById("horseForm").reset();
     } else {
         // Do nothing.
