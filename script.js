@@ -8,6 +8,7 @@ betButton.addEventListener('click', () => {
         text: "Please choose a horse number (#) in the race.",
         icon: "warning",
       });
+      document.getElementById("horseForm").reset();
     } else {
         // Do nothing.
     }                        
@@ -36,14 +37,14 @@ betButton.addEventListener('click', () => {
     if (x >= 1 && x <= 3 && x === winningHorseNumber) {
       swal({
         title: "Good job!",
-        text: "You picked the correct horse!",
+        text: "You picked the correct horse! Go again and see if you can win another.",
         icon: "success",
       });
         document.getElementById("horseForm").reset();
     } else if (x >= 1 && x <= 3 && x !== winningHorseNumber) {
       swal({
         title: "Nope!",
-        text: "Sorry! You picked a loser. The correct horse number was #"+winningHorseNumber+".",
+        text: "Sorry! You picked a loser. The correct horse number was #"+winningHorseNumber+". Try again.",
         icon: "error",
       });
         document.getElementById("horseForm").reset();

@@ -16,9 +16,9 @@ body {
 .col {
 	padding-right: 1em;
   padding-left: 1em;
-  border: 1px solid #b8b8b8;
+  border: 1px solid #d8d8d8;
   padding: 10px;
-  box-shadow: 5px 10px #b8b8b8;
+  box-shadow: 5px 10px #d8d8d8;
   margin: 20px 10px 20px 10px;
 }
 
