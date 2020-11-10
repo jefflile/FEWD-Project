@@ -33,7 +33,7 @@ betButton.addEventListener('click', () => {
         !alert('You picked the correct horse!'); 
         document.getElementById("horseForm").reset();
     } else if (x >= 1 && x <= 3 && x !== winningHorseNumber) {
-        !alert('Sorry! You picked a loser.'); 
+        !alert('Sorry! You picked a loser. The correct horse number was #'+winningHorseNumber); 
         document.getElementById("horseForm").reset();
     } else {
         // Do nothing.
