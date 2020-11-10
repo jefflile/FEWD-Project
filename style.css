@@ -81,8 +81,8 @@ th {
 
 .nav-anchor{
   display: block;
-  height: 85px;
-  margin-top: -85px;
+  height: 115px;
+  margin-top: -115px;
   visibility: hidden;
 }
 
@@ -264,4 +264,5 @@ th {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  text-align: center;
 }
