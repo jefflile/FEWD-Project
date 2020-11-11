@@ -95,3 +95,10 @@ document.addEventListener('scroll', () => {
     document.getElementById("topButton").style.display="none";
   }
 });
+
+let hamburger = document.getElementsByClassName('icon')[0];
+let header = document.getElementsByClassName('main-header')[0];
+var headerHeight = header.offsetHeight;
+var hamburgerHeight = hamburger.offsetHeight
+var middle = (headerHeight/2) - (hamburgerHeight/2);
+hamburger.style.top = middle.toString() + "px";

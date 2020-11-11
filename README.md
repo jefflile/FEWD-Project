@@ -1,8 +1,8 @@
+:horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing:
+
 # Jeff Lile's Code Louisville Horse Racing Project
 
 September 2020 Front End Web Development Class
-
-:horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing:
 
 My project is a one page website (index.html) that can be found at https://jefflile.github.io/. It allows you to place a bet on one of three horses. It will indicate to you if you entered an invalid input and whether you chose the winner or loser. You can see the odds of the horses and some information about them. You are welcome to try to pick a winner over and over as the project resets after each race.
 
@@ -21,3 +21,5 @@ My project is a one page website (index.html) that can be found at https://jeffl
 2. Display pop ups for messages that are conveyed to the user.
 3. The winner of the horse races are chosen at random using Math.random and an array.
 4. Accordions are used for the horse information in the About the Horses section that expand or collapse when clicked.
+
+:horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing:

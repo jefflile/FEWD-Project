@@ -11,7 +11,7 @@
             <script defer src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         </head>
         <body id="Top">
-            <header class="main-header">
+            <header class="main-header" id="header-main">
                 <div class = "logo">
                     <a href="#Top"><img src="horse-running.png" alt="horse running logo" width=100px; onclick="closeMenuFunction()"></a>
                 </div>
@@ -28,7 +28,7 @@
                         <li onclick="closeMenuFunction()"><a href="#Current-Horse-Odds">Current Horse Odds</a></li>
                         <li onclick="closeMenuFunction()"><a href="#About-the-Horses">About the Horses</a></li>
                     </ul>
-                    <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+                    <a href="javascript:void(0);" class="icon" id="hamburger" onclick="menuFunction()" style="top: 18px;">
                         <i class="fa fa-bars fa-2x"></i>
                     </a>
                 </div>
