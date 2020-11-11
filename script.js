@@ -73,25 +73,25 @@ for (i = 0; i < acc.length; i++) {
 function menuFunction() {
     let x = document.getElementById("menuLinks");
     if (x.style.display === "block") {
-      x.style.display = "none";
+      x.style.display="none";
     } else {
-      x.style.display = "block";
+      x.style.display="block";
     }
   }
 
 // Hide mobile menu when menu item is clicked
 function closeMenuFunction () {
   let x = document.getElementById("menuLinks");
-      x.style.display = "none";
+      x.style.display="none";
 }
 
 
 // When the user scrolls down 20px from the top of the document, the button appears
 document.addEventListener('scroll', () => {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("topButton").style.display = "inline-block";
+    document.getElementById("topButton").style.display="inline-block";
   }
   else {
-    document.getElementById("topButton").style.display = "none";
+    document.getElementById("topButton").style.display="none";
   }
 });
