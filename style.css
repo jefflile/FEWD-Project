@@ -216,7 +216,8 @@ th {
     display: block;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
 
@@ -265,8 +266,4 @@ th {
   border-radius: 4px;
   box-sizing: border-box;
   text-align: center;
-}
-
-.hamburger {
-  vertical-align: middle;
 }
