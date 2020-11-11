@@ -12,7 +12,7 @@ My project is a one page website (index.html) that can be found at https://jeffl
 
 1. A hamburger menu was used on mobile devices.
 2. Flexbox is used in the navigation menus and body content.
-3. Used :nth-child on the list of horses in the Horses Odds section.
+3. Used :nth-child on the list of horses in the Current Horse Odds section.
 4. Media queries are used to change how content is presented on different screen sizes.
 
 ### Javascript
