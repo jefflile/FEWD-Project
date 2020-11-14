@@ -107,3 +107,18 @@ document.addEventListener('scroll', () => {
     document.getElementById("topButton").style.display="none";
   }
 });
+
+function onKonamiCode(cb) {
+  var input = '';
+  var key = '38384040373937396665';
+  document.addEventListener('keydown', function (e) {
+    input += ("" + e.keyCode);
+    if (input === key) {
+      return cb();
+    }
+    if (!key.indexOf(input)) return;
+    input = ("" + e.keyCode);
+  });
+}
+
+onKonamiCode(function () {alert('You have entered the Konami code!\n\nStud (#3) has a 50% chance of winning. You should try to bet on Stud as often as you can.')})

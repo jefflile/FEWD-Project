@@ -22,4 +22,6 @@ My project is a one page website (index.html) that can be found at https://jeffl
 3. The winner of the horse races are chosen at random using Math.random and an array.
 4. Accordions are used for the horse information in the About the Horses section that expand or collapse when clicked.
 
+If you are a video game fan, enter the one video game cheat code to rule them all for a secret.
+
 :horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing::horse_racing:
