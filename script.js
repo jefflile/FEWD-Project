@@ -108,6 +108,7 @@ document.addEventListener('scroll', () => {
   }
 });
 
+// Konami code
 function onKonamiCode(cb) {
   var input = '';
   var key = '38384040373937396665';
