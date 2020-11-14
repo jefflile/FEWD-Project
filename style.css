@@ -167,6 +167,15 @@ th {
   text-align: center;
 }
 
+.col {
+	padding-right: 1em;
+  padding-left: 1em;
+  border: 1px solid #d8d8d8;
+  padding: 10px;
+  box-shadow: 5px 10px #d8d8d8;
+  margin: 20px 10px 20px 10px;
+}
+
 /* Styles the input field on the bet form */
 .input-field {
   width: 80%;
