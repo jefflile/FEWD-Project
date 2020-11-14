@@ -14,7 +14,8 @@ betButton.addEventListener('click', () => {
     }                        
 });
 
-// This action displays an alert if the horse picked was correct or incorrect.
+// This event listener activates when the bet button is clicked.
+// This is the array for possible horse winners.
 betButton.addEventListener('click', () => {
     let x;
     let horseArray;
@@ -31,9 +32,11 @@ betButton.addEventListener('click', () => {
       "1",
       "1"
     ]
+
     // The winning horse is chosen from the array at random.
     let winningHorseNumber = horseArray[Math.floor(Math.random()*horseArray.length)];
 
+    // This displays the winning or losing popup if a valid horse number was entered.
     if (x >= 1 && x <= 3 && x === winningHorseNumber) {
       swal({
         title: "Good job!",
@@ -69,24 +72,35 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-// Show/hide menu with hamburger icon
+// Show/hide menu with hamburger icon.
 function menuFunction() {
     let x = document.getElementById("menuLinks");
     if (x.style.display === "block") {
       x.style.display="none";
     } else {
       x.style.display="block";
+      document.getElementById("icon").style.display="none";
+      document.getElementById("click-icon").style.display="block";
+      let hamburger = document.getElementsByClassName('click-icon')[0];
+      let header = document.getElementsByClassName('main-header')[0];
+      var headerHeight = header.offsetHeight;
+      var hamburgerHeight = hamburger.offsetHeight
+      var middle = (headerHeight/2) - (hamburgerHeight/2);
+      hamburger.style.top = middle.toString() + "px";
     }
   }
 
-// Hide mobile menu when menu item is clicked
+// Hide mobile menu when menu item is clicked.
 function closeMenuFunction () {
   let x = document.getElementById("menuLinks");
       x.style.display="none";
 }
 
+// This controls the placement of the hamburger menu icon.
 
-// When the user scrolls down 20px from the top of the document, the button appears
+
+
+// When the user scrolls down 20px from the top of the document, the button appears.
 document.addEventListener('scroll', () => {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("topButton").style.display="inline-block";
@@ -95,10 +109,3 @@ document.addEventListener('scroll', () => {
     document.getElementById("topButton").style.display="none";
   }
 });
-
-let hamburger = document.getElementsByClassName('icon')[0];
-let header = document.getElementsByClassName('main-header')[0];
-var headerHeight = header.offsetHeight;
-var hamburgerHeight = hamburger.offsetHeight
-var middle = (headerHeight/2) - (hamburgerHeight/2);
-hamburger.style.top = middle.toString() + "px";
