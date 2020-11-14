@@ -79,6 +79,7 @@ function menuFunction() {
       x.style.display="none";
     } else {
       x.style.display="block";
+      // This controls the placement of the hamburger menu icon.
       document.getElementById("icon").style.display="none";
       document.getElementById("click-icon").style.display="block";
       let hamburger = document.getElementsByClassName('click-icon')[0];
@@ -95,9 +96,6 @@ function closeMenuFunction () {
   let x = document.getElementById("menuLinks");
       x.style.display="none";
 }
-
-// This controls the placement of the hamburger menu icon.
-
 
 
 // When the user scrolls down 20px from the top of the document, the button appears.
